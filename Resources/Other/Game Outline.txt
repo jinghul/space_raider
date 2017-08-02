@@ -1,0 +1,58 @@
+Space Raiders Outline
+
+Goals for Game:
+- PVP - 2 SHIPS - Attack Each Other
+- Customizable ships (or options to choose from)
+	- Speed + Attack Speed + Number of Missiles Fired
+	- Gun class (Controls the Attack Speed, Type of Attack, Damage)
+- Different missile particles (from powerups?)(or additional option)(Width + Color + Speed)
+- 3 Levels (Easy to make more, just need to add arrays of coordinates)
+ 	- Different movements of enemies each level (meteroids, aliens, boss?)
+- Infinite Mode??? - Upgrades...
+- Store Panel
+	- Currency gained from killing enemies.
+- Health + Damage System (In a different abstract class)
+- Powerup system.
+- Load screen 
+	- Animations, options, window size(?)
+- Gameover animation
+- Background (different settings)
+
+
+
+Menu:
+1. Main //Everything runs from this frame
+2. Menu - JFrame
+	- 4 Buttons: Start, Options,(Store?), Exit
+	- Start - Erases current Panel, Replaces with new game panel
+	- Story Mode vs. Infinite Mode
+	- Choose from 3 different ships - displays stats with bar?
+	- Pause Menu too-----
+
+Options
+1.Volume
+2.Game Difficulty
+3.Window Size?
+
+
+
+
+Background:
+1. Abstract Class Sprite
+- Sets up coordinates
+- movement system
+- Boundaries for collision
+- Load image
+
+2. Abstract Class Uninvincible
+- Health, Damage Variables
+- Damage Method
+- Heal Method
+
+3. Craft extends Sprite, Uninvincible
+4. Missile extends Sprite
+5. Meteroids extends Sprite, Uninvincible
+6. Aliens extends Sprite, Uninvincible
+7. Boss Alien extends Sprite, Uninvincible
+8. Store Panel - JButtons
+9. PVP Panel (on Demand)
